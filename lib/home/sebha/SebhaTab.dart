@@ -29,9 +29,7 @@ class _SebhaTabState extends State<SebhaTab> {
                 child: Stack(
                   alignment: Alignment.topCenter,
                   children: [
-                    Transform.rotate(
-                      angle: fan,
-                      child: Container(
+                    Container(
                           margin: EdgeInsets.only(left: 50),
                           height: 105,
                           width: 105,
@@ -40,17 +38,16 @@ class _SebhaTabState extends State<SebhaTab> {
                             height: 105,
                             width: 105,
                           )),
-                    ),
-                    Transform.rotate(
-                      angle: fan,
-                      child: Container(
-                        margin: EdgeInsets.only(top: 70),
+                    Container(
+                        margin: EdgeInsets.only(top: 80),
                         width: 234,
                         height: 183,
-                        child: Image.asset('assets/images/body of seb7a.png',
-                            width: 234, height: 183),
+                        child: Transform.rotate(angle:math.pi/180*degre ,
+                          child: Image.asset('assets/images/body of seb7a.png',
+                              width: 234, height: 183),
+                        ),
                       ),
-                    )
+
                   ],
                 ),
               ),
