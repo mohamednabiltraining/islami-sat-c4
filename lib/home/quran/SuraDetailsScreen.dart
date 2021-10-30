@@ -43,7 +43,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                     separatorBuilder: (buildContext, index) {
                       return Container(
                         margin: EdgeInsets.symmetric(horizontal: 48),
-                        color: MyThemeData.primaryColor,
+                        color: MyThemeData.lightPrimaryColor,
                         height: 1,
                       );
                     },

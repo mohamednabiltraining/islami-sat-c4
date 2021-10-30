@@ -125,7 +125,7 @@ class QuranTab extends StatelessWidget {
     return Column(children: [
       Expanded(child: Image.asset('assets/images/quran_top_logo.png')),
       Container(
-        color: MyThemeData.primaryColor,
+        color: MyThemeData.lightPrimaryColor,
         height: 1,
       ),
       Padding(
@@ -136,7 +136,7 @@ class QuranTab extends StatelessWidget {
         ),
       ),
       Container(
-        color: MyThemeData.primaryColor,
+        color: MyThemeData.lightPrimaryColor,
         height: 1,
       ),
       Expanded(
@@ -145,7 +145,7 @@ class QuranTab extends StatelessWidget {
           separatorBuilder: (buildContext, index) {
             return Container(
               margin: EdgeInsets.symmetric(horizontal: 48),
-              color: MyThemeData.primaryColor,
+              color: MyThemeData.lightPrimaryColor,
               height: 1,
             );
           },
